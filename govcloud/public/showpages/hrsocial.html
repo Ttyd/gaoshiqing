@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title>Title</title>
+    <link rel="stylesheet" href="../plugin/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../stylesheets/style.css">
+</head>
+<body>
+
+    <div class="hrsocial container-fluid">
+        <div id="echarts">
+
+        </div>
+    </div>
+
+
+
+    <script src="../plugin/jquery/dist/jquery.min.js"></script>
+    <script src="../plugin/jquery/dist/jquery.slim.min.js"></script>
+    <script src="../plugin/popper.js/dist/umd/popper.min.js"></script>
+    <script src="../plugin/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../plugin/echarts/js/echarts.min.js"></script>
+    <script>
+        var mycharts = echarts.init(document.getElementById('echarts'));
+        mycharts.setOption({
+            color:['#007bff'],
+            toolbox: {
+                show: true
+            },
+            tooltip: {
+                trigger: 'none',
+                axisPointer: {
+                    type: 'cross'
+                }
+            },
+            xAxis:  {
+                type: 'category',
+                boundaryGap: false,
+                data: [1,2,3,4,5,6]
+            },
+            yAxis: {
+                type:'value',
+                name:'活动步数'
+
+            },
+            series: [
+                {
+                    data: [20,30,25,35,20,30,35,50,30,35],
+                    type:'line',
+                    itemStyle:{
+                        normal:{
+                            areaStyle:{color:'#007bff'}
+                        }
+                    },
+                    areaStyle:{}
+                }
+            ]
+        })
+    </script>
+
+</body>
+</html>
