@@ -1,0 +1,356 @@
+*{
+  padding:0;
+  margin:0;
+}
+body,html{
+  width:100%;
+  height:100%;
+  background-color:#f1f1f1
+}
+html{
+  font-size: 10px;
+}
+body {
+  width:100%;
+  height:100%;
+  margin:0;
+  padding:0;
+  font-family: "微软雅黑";
+  min-height:100%;
+  background-color: #002b6a;
+}
+.bk-padding-top-10{
+  padding-top:1rem
+}
+/*header*/
+.zhengwuyun{
+  width:100%;
+  height: 100%;
+  min-height:100%;
+  background:url("../images/zhengwuyun/background.jpg") no-repeat;
+ background-size: 100%;
+}
+.yunhead{
+  width:93%;
+  margin-left: 4%;
+  color:#fff;
+  padding-top: 3rem;
+}
+.header_bg{
+  background: url("../images/zhengwuyun/haderbg.jpg") no-repeat;
+  background-size: 100% 100%;
+  z-index:-1;
+  font-size:2.3rem;
+  padding:.5rem;
+  letter-spacing: 1rem;
+  font-weight: 400;
+}
+.head_right{
+  float: right;
+  margin-top:-3.5rem;
+  margin-right:1rem;
+}
+.head_right .time{
+  float: right;
+  display: inline-block;
+  height:4rem;
+  line-height: 2rem;
+  margin-top:.5rem;
+  font-family: "MS Reference Sans Serif";
+  font-size:2rem;
+  padding-right: .5rem;
+}
+.head_right>.dateshow{
+  float: right;
+  display: inline-block;
+  height:4rem;
+  line-height: 1rem;
+  margin-top:.5rem;
+}
+
+.data, .week{
+  font-size:1rem;
+  color:#6f9eff
+}
+.week{
+  margin-top: .2rem;
+}
+/*yunleft*/
+.yuncontent{
+  float: left;
+  width:100%;
+  height:83%;
+}
+.yuncontent .contentleft{
+  float: left;
+  width:66%;
+  height:100%;
+  margin-left:4%;
+}
+.contentleft >div{
+  float: left;
+}
+/*总带宽、内存、cpu*/
+.contentleft .contleft{
+  float: left;
+  width:30%;
+  height:100%;
+  display: inline-block;
+  margin-top:1rem;
+}
+.contleft .bandwidth{
+  color:#1fc4ba;
+  font-size:1.6rem;
+  padding:.5rem;
+}
+.contleft .bandimg{
+  width:90%;
+  height:120px;
+  line-height:120px;
+  text-align: center;
+}
+.contleft .bandimg div{
+  background: url("../images/zhengwuyun/bandimg.jpg") no-repeat;
+  background-size: 100% 100%;
+  width:100%;
+  height: 100%;
+  text-align: center;
+  color: #1fc4ba;
+  font-size: 2.2rem;
+}
+.contleft .bandimg div span{
+  font-size: 1rem;
+}
+.contleft .memory{
+  width:90%;
+  height:100px;
+  position: relative;
+  background-color: rgba(0, 36, 90,.5);
+  box-shadow: 0 0 1px #1fc4ba;
+  font-size: 2.2rem;
+  margin-top:1rem;
+  padding-top:1rem;
+}
+.contleft .memory>div{
+  display:inline-block ;
+}
+.contleft .holdimg{
+  position: absolute;
+}
+.contleft img{
+  width:40px;
+  height:40px;
+  margin-left:3rem;
+}
+.contleft .memoryshow{
+  position: absolute;
+  margin-left:7.5rem;
+  color: #fff;
+  line-height:20px;
+}
+.contleft .memoryshow div:first-child{
+  font-size:1.4rem;
+  line-height:16px;
+}
+.contleft .memoryshow span{
+  font-size:1rem;
+}
+.contleft .memoryshow .fontbold{
+  font-weight: bold;
+  font-size:2rem;
+}
+.shutiao{
+  width:100%;
+  text-align: center;
+}
+.tiaozhuang{
+  width:0;
+  height:15px;
+  border:1px solid #f1f1f1;
+  border-radius: 30%;
+  margin:5rem -.2rem 0 0;
+  display: inline-block;
+}
+.contentleft .contentleft_top{
+  position: relative;
+  width:100%;
+  height:86%;
+}
+
+/* contmiddle*/
+.contentleft .contmiddle{
+  width:70%;
+  height:100%;
+  display: inline-block;
+}
+.contmiddle .yunzhuji{
+  width:32.5%;
+  display: inline-block;
+  text-align: center;
+}
+.yunzhuji .imgstyle{
+  display: inline-block;
+  width:45px;
+  height:45px;
+  margin-top:1.5rem;
+}
+.yunzhuji img{
+  width: 100%;
+  height:100%;
+}
+
+.contmiddle .yunjistyle{
+  position: absolute;
+  color:#6e9ffb;
+  font-size:1.2rem;
+  margin-top:1.3rem;
+  margin-left:.5rem;
+}
+.yunjistyle div:nth-child(2){
+  font-size:3rem;
+  margin-top:-.5rem;
+}
+.contmiddle .xitong{
+  color:#d46463
+}
+.contmiddle .weibanju{
+  color:#1fc3ba
+}
+.mapshowset{
+  position: relative;
+  width:100%;
+  height:100%;
+  text-align: center;
+  margin:25%;
+}
+#mapshow{
+  width:300px;
+  height:300px;
+}
+
+.contbottom{
+  position: absolute;
+  bottom:0;
+  width:60%;
+  height:13%;
+}
+#jifangshidu, #jifangwendu, #jifangdianliu, #gongjiweixie, #xitongfangwenqushi {
+  width:20%;
+  height:80px;
+  display: inline-block;
+  position: absolute;
+  bottom:20%;
+  margin:0 2rem
+}
+#jifangwendu{
+  margin-left:22%;
+}
+#jifangdianliu{
+  margin-left:42%;
+}
+#gongjiweixie{
+  margin-left:62%;
+}
+#xitongfangwenqushi{
+  margin-left:82%;
+}
+.bottomtitle{
+  position: absolute;
+  margin: 1.2rem 0 0 4%;
+  color:#fff;
+}
+.bt1{
+  margin-left:24%;
+}
+.bt2{
+  margin-left:44%;
+}
+.bt3{
+  margin-left:64%;
+}
+.bt4{
+  margin-left:84%;
+}
+
+.hrsocial{
+  width:200px;
+  height: 200px;
+  border:1px solid #aaa;
+}
+.inline-block{
+  display: inline-block !important;
+}
+
+/*排名*/
+
+.yuncontent .contentright{
+  float: right;
+  width:26%;
+  height:100%;
+}
+.daoyin{
+  position: absolute;
+  width:2px;
+  height:20px;
+  margin-top: .2rem;
+  border: 1px solid #f1f1f1;
+  display: inline-block;
+  margin-left:.5%;
+}
+.contentright .ziyuanpaiming{
+  font-size: 1.6rem;
+  color: #fff;
+  margin-left:3%;
+}
+.right_top{
+  margin-top:1.5rem;
+}
+.right_list{
+  margin-top:1rem;
+}
+.right_list .progresstitle{
+  width:32%;
+  display: inline-block;
+  color:#6f9eff;
+  text-align: right;
+  margin-right:2%;
+}
+.right_list .progressshow{
+  width:40%;
+  display: inline-block;
+}
+.progressshow .progress{
+  height:.5rem;
+}
+.progressshow .progress .progress-bar{
+  color:#6f9eff;
+  border-radius:0 10% 10% 0;
+
+}
+.right_list .progressshowdata{
+  width:25%;
+  display: inline-block;
+  color:#fff;
+  text-align: center;
+}
+
+@media screen and (max-width: 1180px){
+  .contleft .bandimg{
+    height:100px;
+  }
+  .contleft .memory{
+    height:90px;
+  }
+}
+
+@media screen and (min-width: 1317px){
+  .daoyin{
+    margin-left:2.5%;
+  }
+  .contentright .ziyuanpaiming{
+    margin-left:11%;
+  }
+  .contleft .bandimg, .contleft .memory {
+    width: 75%;
+  }
+}
