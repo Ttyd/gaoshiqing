@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title>北京政务云监控平台</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../javascript/map/colormap.min.css">
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+
+    <div class="zhengwuyun container-fluid">
+        <div class="rows yunhead">
+            <div class="text-center header_bg">
+              北京政务云监控平台
+            </div>
+            <div class="head_right">
+                <div class="dateshow">
+                     <div class="data"></div>
+                     <div class="week"></div>
+                </div>
+                <div class="time"></div>
+            </div>
+        </div>
+        <div class="yuncontent clearfix">
+            <div class="contentleft clearfix">
+                <div class="contentleft_top clearfix">
+                    <!--总宽带-->
+                    <div class="contleft">
+                        <div class="bandwidth">总带宽</div>
+                        <div class="bandimg">
+                            <div>200 <span>M</span></div>
+                        </div>
+                        <div class="memory">
+                            <div class="holdimg">
+                                <img src="../images/zhengwuyun/memory.jpg" alt="">
+                            </div>
+                            <div class="memoryshow">
+                                <div>总内存</div>
+                                <div> <span class="fontbold">4096</span> <span>G</span> </div>
+                            </div>
+                            <div class="shutiao shutiao1">
+                            </div>
+                        </div>
+                        <div class="memory clearfix">
+                            <div class="holdimg">
+                                <img src="../images/zhengwuyun/cunchu.jpg" alt="">
+                            </div>
+                            <div class="memoryshow">
+                                <div>总CPU</div>
+                                <div> <span class="fontbold">4000</span> <span>c</span> </div>
+                            </div>
+                            <div class="shutiao shutiao2"></div>
+
+                        </div>
+                        <div class="memory">
+                            <div class="holdimg">
+                                <img src="../images/zhengwuyun/allcpu.jpg" alt="">
+                            </div>
+                            <div class="memoryshow">
+                                <div>存储</div>
+                                <div> <span class="fontbold">1000</span> <span>T</span> </div>
+                            </div>
+                            <div class="shutiao shutiao3"></div>
+                        </div>
+                    </div>
+                    <!--总宽带-->
+                    <!--content middle-->
+                    <div class="contmiddle  clearfix">
+                        <div class="yunzhuji">
+                            <div class="imgstyle">
+                                <img src="../images/zhengwuyun/yunzhujishu.jpg" alt="">
+                            </div>
+                            <div class="inline-block yunjistyle">
+                                <div>云主机总数</div>
+                                <div >500</div>
+                            </div>
+                        </div>
+                        <div class="yunzhuji">
+                            <div class="imgstyle">
+                                <img src="../images/zhengwuyun/xitongzongshu.jpg" alt="">
+                            </div>
+                            <div class="inline-block yunjistyle xitong">
+                                <div>系统总数</div>
+                                <div>528</div>
+                            </div>
+                        </div>
+                        <div class="yunzhuji">
+                            <div class="imgstyle">
+                                <img src="../images/zhengwuyun/weibanjuzongshu.jpg" alt="">
+                            </div>
+                            <div class="inline-block yunjistyle weibanju">
+                                <div>委办局总数</div>
+                                <div >42</div>
+                            </div>
+                        </div>
+                        <div class="mapshowset">
+                            <div id="mapshow"> </div>
+                        </div>
+                    </div>
+                    <!--content middle-->
+                </div>
+                <!--content bottom-->
+                <div class="contbottom">
+                    <div class="bottomtitle">机房湿度</div>
+                    <div id="jifangshidu"></div>
+                    <div class="bottomtitle bt1">机房温度</div>
+                    <div id="jifangwendu"></div>
+                    <div class="bottomtitle bt2">机房电流</div>
+                    <div id="jifangdianliu"></div>
+                    <div class="bottomtitle bt3">攻击威胁</div>
+                    <div id="gongjiweixie"></div>
+                    <div class="bottomtitle bt4">系统访问趋势</div>
+                    <div id="xitongfangwenqushi"></div>
+                </div>
+                <!--content bottom-->
+            </div>
+            <div class="contentright">
+                <div class="right_top">
+                    <div class="daoyin"></div> <span class="ziyuanpaiming">委办局资源排名</span>
+                    <div class="listbysource">
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../javascript/map/svg.min.js"></script>
+    <script src="../javascript/map/sxcolormap.js"></script>
+    <script src="../../node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../../node_modules/echarts/dist/echarts.min.js"></script>
+    <script src="../javascript/allpagescom.js"></script>
+    <script src="../javascript/zhengwuyun.js"></script>
+    <script src="../javascript/zhengwuyun1.js"></script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title>人力资源市场监控平台</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+
+    <div class="zhengwuyun container-fluid">
+        <div class="rows yunhead">
+            <div class="text-center header_bg">
+                人力资源市场监控平台
+            </div>
+            <div class="head_right">
+                <div class="dateshow">
+                     <div class="data"></div>
+                     <div class="week"></div>
+                </div>
+                <div class="time"></div>
+            </div>
+        </div>
+        <div class="marketcontent clearfix">
+            <div class="markleft clearfix">
+                <div class="markleft_source">
+                    <div class="daoyin"></div> <span class="ziyuanpaiming">资源使用</span>
+                    <div class="marker_echart">
+                        <div class="echartshead">CPU <div></div></div>
+                        <div class="memory">
+                            <div id="usecpu"></div>
+                        </div>
+                    </div>
+                    <div class="marker_echart">
+                        <div class="echartshead">内存 <div class="markerneicun"></div></div>
+                        <div class="memory">
+                            <div id="useneicun"></div>
+                        </div>
+                    </div>
+                    <div class="marker_echart">
+                        <div class="echartshead">存储 <div class="markercunchu"></div></div>
+                        <div class="memory">
+                            <div id="usecunchu"></div>
+                        </div>
+                    </div>
+                </div>
+                <!--content bottom-->
+                <div class="contbottom">
+                    <div class="bottomtitle">机房湿度</div>
+                    <div id="jifangshidu"></div>
+                    <div class="bottomtitle bt1">机房温度</div>
+                    <div id="jifangwendu"></div>
+                    <div class="bottomtitle bt2">机房电流</div>
+                    <div id="jifangdianliu"></div>
+                    <div class="bottomtitle bt3">攻击威胁</div>
+                    <div id="gongjiweixie"></div>
+                    <div class="bottomtitle bt4">系统访问趋势</div>
+                    <div id="xitongfangwenqushi"></div>
+                </div>
+                <!--content bottom-->
+            </div>
+            <div class="marketcenter">
+                <div class="daoyin"></div> <span class="ziyuanpaiming">系统访问</span>
+                <div class="mark_xitongfangwen">
+                    <div id="twodayecharts"></div>
+                </div>
+                <div class="daoyin"></div><span class="ziyuanpaiming">访问系统</span>
+                <div class="mark_system">
+                    <div id="markphone"> </div>
+                    <div id="markbrower"> </div>
+                    <div id="marksys"> </div>
+                </div>
+
+
+
+            </div>
+
+            <!--右侧-->
+            <div class="contentright">
+                <div class="right_top">
+                    <div class="daoyin"></div> <span class="ziyuanpaiming">系统功能响应排名</span>
+                    <div class="listbysource">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+
+    <script src="../../node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../../node_modules/echarts/dist/echarts.min.js"></script>
+    <script src="../javascript/allpagescom.js"></script>
+    <script src="../javascript/market.js"></script>
+</body>
+</html>

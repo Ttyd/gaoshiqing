@@ -1,0 +1,628 @@
+*{
+  padding:0;
+  margin:0;
+}
+body,html{
+  width:100%;
+  height:100%;
+  background-color:#f1f1f1
+}
+html{
+  font-size: 10px;
+}
+body {
+  width:100%;
+  height:100%;
+  margin:0;
+  padding:0;
+  font-family: "微软雅黑";
+  min-height:100%;
+  background-color: #002b6a;
+}
+.bk-padding-top-10{
+  padding-top:1rem
+}
+/*header*/
+.zhengwuyun{
+  width:100%;
+  height: 100%;
+  min-height:100%;
+  background:url("../images/zhengwuyun/background.jpg") no-repeat;
+  background-size: 100%;
+}
+.yunhead{
+  width:93%;
+  margin-left: 4%;
+  color:#fff;
+  padding-top: 3rem;
+}
+.header_bg{
+  background: url("../images/zhengwuyun/haderbg.jpg") no-repeat;
+  background-size: 100% 100%;
+  z-index:-1;
+  font-size:2.3rem;
+  padding:.5rem;
+  letter-spacing: 1rem;
+  font-weight: 400;
+}
+.head_right{
+  float: right;
+  margin-top:-3.5rem;
+  margin-right:1rem;
+}
+.head_right .time{
+  float: right;
+  display: inline-block;
+  height:4rem;
+  line-height: 2rem;
+  margin-top:.5rem;
+  font-family: "MS Reference Sans Serif";
+  font-size:2rem;
+  padding-right: .5rem;
+}
+.head_right>.dateshow{
+  float: right;
+  display: inline-block;
+  height:4rem;
+  line-height: 1rem;
+  margin-top:.5rem;
+}
+.data, .week{
+  font-size:1rem;
+  color:#6f9eff
+}
+.week{
+  margin-top: .2rem;
+}
+/*yunleft*/
+.yuncontent{
+  float: left;
+  width:100%;
+  height:83%;
+}
+.yuncontent .contentleft{
+  float: left;
+  width:66%;
+  height:100%;
+  margin-left:4%;
+}
+.contentleft >div{
+  float: left;
+}
+/*总带宽、内存、cpu*/
+.contentleft .contleft{
+  float: left;
+  width:30%;
+  height:100%;
+  display: inline-block;
+  margin-top:1rem;
+}
+.contleft .bandwidth{
+  color:#1fc4ba;
+  font-size:1.6rem;
+  padding:.5rem;
+}
+.contleft .bandimg{
+  width:90%;
+  height:20%;
+  position: relative;
+}
+.contleft .bandimg>div{
+  background: url("../images/zhengwuyun/bandimg.jpg") no-repeat;
+  background-size: 100% 100%;
+   width:100%;
+   height: 100%;
+   text-align: center;
+    color: #1fc4ba;
+  font-size: 2.2rem;
+
+
+}
+.contleft .bandimg div:after{
+  content:'';
+  width:0;
+  height:100%;
+  display:inline-block;
+  vertical-align:middle;
+}
+.contleft .bandimg div span{
+  font-size: 1rem;
+}
+.memory{
+  width:90%;
+  height:18%;
+  position: relative;
+  background-color: rgba(0, 36, 90,.5);
+  box-shadow: 0 0 1px #1fc4ba;
+  font-size: 2.2rem;
+  margin-top:4%;
+  padding-top:1rem;
+}
+.contleft .memory>div{
+  display:inline-block ;
+}
+.contleft .holdimg{
+  position: absolute;
+  bottom:45%;
+}
+.contleft img{
+  width:40px;
+  height:40px;
+  margin-left:3rem;
+}
+.contleft .memoryshow{
+  position: absolute;
+  margin-left:7.5rem;
+  color: #fff;
+  line-height:20px;
+  bottom:45%;
+}
+.contleft .memoryshow div:first-child{
+  font-size:1.4rem;
+  line-height:16px;
+}
+.contleft .memoryshow span{
+  font-size:1rem;
+}
+.contleft .memoryshow .fontbold{
+  font-weight: bold;
+  font-size:2rem;
+}
+.shutiao{
+  width:100%;
+  text-align: center;
+  position: absolute;
+  bottom:1%;
+}
+.tiaozhuang{
+  width:0;
+  height:15px;
+  border:1px solid #f1f1f1;
+  border-radius: 30%;
+  margin:5rem -.2rem 0 0;
+  display: inline-block;
+}
+.contentleft .contentleft_top{
+  position: relative;
+  width:100%;
+  height:86%;
+}
+
+/* contmiddle*/
+.contentleft .contmiddle{
+  width:70%;
+  height:100%;
+  display: inline-block;
+}
+.yunzhuji{
+  width:32.5%;
+  display: inline-block;
+ /* text-align: center;*/
+  padding-left: 4%;
+  margin-top:1rem;
+}
+.yunzhuji:not(:first-child){
+  border-left:1px solid #043679;
+}
+.yunzhuji .imgstyle{
+  display: inline-block;
+  width:45px;
+  height:45px;
+  margin-top:.5rem;
+}
+.yunzhuji img{
+  width: 100%;
+  height:100%;
+}
+
+.yunjistyle{
+  position: absolute;
+  color:#6e9ffb;
+  font-size:1.2rem;
+  margin-top:.3rem;
+  margin-left:.5rem;
+}
+.yunjistyle div:nth-child(2){
+  font-size:3rem;
+  margin-top:-.5rem;
+}
+.fuwu{
+  color:#6e9ffb;
+}
+ .xitong{
+  color:#d46463
+}
+ .weibanju{
+  color:#1fc3ba
+}
+ .neicuncolor{
+  color:#a37bdc
+}
+ .cuncolor{
+  color:#e3953a
+}
+.mapshowset{
+  position: relative;
+  width:100%;
+  text-align: center;
+  font-size: 3rem;
+  color:#fff;
+}
+#mapshow, #mapshow2{
+  position: absolute;
+  left:50%;
+  transform:translate(-50%);
+  width:100%;
+  height:50%;
+}
+
+.contbottom{
+  position: absolute;
+  bottom:0;
+  width:60%;
+  height:13%;
+}
+#jifangshidu, #jifangwendu, #jifangdianliu, #gongjiweixie, #xitongfangwenqushi {
+  width:20%;
+  height:80px;
+  display: inline-block;
+  position: absolute;
+  bottom:1%;
+  margin:0 2rem
+}
+#jifangwendu{
+  margin-left:22%;
+}
+#jifangdianliu{
+  margin-left:42%;
+}
+#gongjiweixie{
+  margin-left:62%;
+}
+#xitongfangwenqushi{
+  margin-left:82%;
+}
+.bottomtitle{
+  position: absolute;
+  margin: 1% 0 0 4%;
+  color:#fff;
+}
+.bt1{
+  margin-left:24%;
+}
+.bt2{
+  margin-left:44%;
+}
+.bt3{
+  margin-left:64%;
+}
+.bt4{
+  margin-left:84%;
+}
+
+.inline-block{
+  display: inline-block !important;
+}
+
+/*排名*/
+
+.contentright{
+  float: right;
+  width:22%;
+  height:100%;
+}
+.daoyin{
+  position: absolute;
+  width:2px;
+  height:20px;
+  margin-top: .2rem;
+  border: 1px solid #f1f1f1;
+  display: inline-block;
+  margin-left:.5%;
+}
+ .ziyuanpaiming{
+  font-size: 1.6rem;
+  color: #fff;
+  margin-left:4%;
+}
+.right_list{
+  margin-top:1rem;
+}
+.right_list .progresstitle{
+  width:34%;
+  display: inline-block;
+  color:#6f9eff;
+  text-align: right;
+  margin-right:2%;
+}
+.right_list .progressshow{
+  width:36%;
+  display: inline-block;
+}
+.progressshow .progress{
+  height:.5rem;
+}
+.progressshow .progress .progress-bar{
+  color:#6f9eff;
+  border-radius:0 10% 10% 0;
+
+}
+.right_list .progressshowdata{
+  width:28%;
+  display: inline-block;
+  color:#fff;
+  text-align: center;
+}
+/*人力资源和社会保障局*/
+
+.headbottom{
+  width:100%;
+  margin-top:1rem;
+}
+.headbottom>.yunzhuji{
+  width:19.5%;
+}
+.headbottom .yunzhuji:not(:first-child){
+  width:19.5%;
+}
+.bodycontent{
+  width: 100%;
+  height:calc(100% - 200px);
+  margin-top:1.5rem;
+}
+.hrsocleft, .markleft{
+  float: left;
+  width:22%;
+  height:100%;
+  margin-left:3%;
+  display: inline-block;
+}
+.bodycontent .right_list {
+   margin-top: .6rem;
+ }
+.hrsocont{
+  float: left;
+  width:51%;
+  height:100%;
+  min-height:100%;
+  margin-left: 1rem;
+}
+.showguage{
+  width:100%;
+  height:20%;
+  margin-bottom:3%
+}
+#hrcpu, #hrneicun, #hrcunchu{
+  width:32.5%;
+  height:100px;
+  display: inline-block;
+}
+.guagebottom{
+  width:32.5%;
+  display: inline-block;
+  position: relative;
+}
+.guagebottom div{
+  width:100%;
+  position: absolute;
+  left:50%;
+  transform: translateX(-50%);
+}
+.guagebottom div div{
+  width:40%;
+  height:3px;
+  background: #1fc4ba;
+}
+.guagebottom .neicun{
+  background:#adde93
+}
+.guagebottom .cunchu{
+  background:#1d79ff
+}
+.fangwenqushi{
+  width:100%;
+  height:30%;
+}
+#fangwenecharts , #wuliecharts ,#serverfangwenqushi{
+  width:100%;
+  height:200px;
+}
+
+.hrsoright{
+  float: left;
+  width:20%;
+  height:100%;
+  margin-top:1rem;
+  display: inline-block;
+
+}
+.hrlisttitle{
+  width:100%;
+  margin-top:1rem;
+  background-color: #1443a6;
+  text-align: center;
+}
+.hrlisttitle div{
+  width:32%;
+  display: inline-block;
+  color:#fff;
+  font-size:1.5rem;
+  padding: .4rem 0;
+}
+.hrlistbody{
+  width:100%;
+  text-align: center;
+}
+.statectrl i{
+  width:1.5rem;
+  font-weight: 400;
+}
+.statectrl{
+  width:100%;
+  text-align: center;
+  color: #ffffff;
+  margin-top:1rem;
+}
+.statectrl div{
+  display: inline-block;
+  width:36%;
+}
+.hrlisttitle div:nth-child(2) , .statectrl div:nth-child(2){
+  width:30%;
+}
+.hrlisttitle div:nth-child(3) , .statectrl div:nth-child(3){
+  width:34%;
+}
+.statectrl div:last-child{
+  text-align: left;
+  padding-left:5%;
+}
+.statectrl .statedown{
+  text-align: left;
+  color:#30db82;
+}
+
+.statectrl .stateup{
+  text-align: left;
+  color:#ff6464;
+}
+.server-headbottom {
+  margin-top:1rem;
+}
+.server-headbottom .yunzhuji{
+  width:24%;
+}
+.chordcont{
+  width:100%;
+  height:60%;
+  text-align: center;
+}
+#chord{
+  width:100%;
+  height:400px;
+}
+
+/*人力资源市场监控平台*/
+.marketcontent{
+  width:100%;
+  height:calc(100% - 120px);
+  margin-top:1.5rem;
+}
+#usecpu, #useneicun, #usecunchu{
+  width:100%;
+  height:160px;
+}
+.echartshead{
+  color:#fff;
+  font-size: 1.4rem;
+  text-align: right;
+  margin-right: 11%;
+}
+.echartshead div{
+  display: inline-block;
+  width:1rem;
+  height:1rem;
+  background-color:#6f9eff ;
+  border-radius: 50%;
+}
+.marker_echart .memory{
+  box-shadow: none;
+}
+.marketcenter{
+  float: left;
+  width: 51%;
+  height: 85%;
+  margin-left: 1rem;
+}
+.mark_xitongfangwen{
+  width: 100%;
+  height:40%;
+}
+.echartshead .markerneicun{
+  background-color:#d56666 ;
+}
+.echartshead .markercunchu{
+  background-color: #1fc3ba;
+}
+/*.listbysource{
+  width:100%;
+  height:20%;
+}*/
+#twodayecharts{
+  width:100%;
+  height: 200px;
+}
+.mark_system{
+  width:100%;
+  height:40%;
+}
+#markphone, #markbrower, #marksys{
+  display: inline-block;
+  width:32.5%;
+  height:300px;
+}
+/*-----------------------------适配-------------------------------*/
+@media screen and (max-width: 1358px){
+  .contleft .bandimg, .contleft .memory{
+    height:19%;
+  }
+  #usecpu, #useneicun, #usecunchu{
+    width:100%;
+    height:100px;
+  }
+  .bodycontent .right_list , .hrlisttitle, .yunzhuji {
+    margin-top: 0.1rem;
+  }
+  .statectrl{
+    margin-top:.2rem;
+  }
+  #fangwenecharts, #wuliecharts {
+    height: 140px;
+  }
+  #serverfangwenqushi{
+    height: 150px;
+  }
+  #chord{
+    height: 350px;
+  }
+  #hrcpu, #hrneicun, #hrcunchu {
+    height: 80px;
+    margin-top:-30px;
+  }
+  .showguage{
+    margin-top:2%
+  }
+  .right_list {
+    margin-top: .3rem;
+  }
+  .hrlisttitle div{
+    font-size:1.2rem;
+  }
+  .chordcont{
+    height: 70%;
+  }
+
+}
+
+@media screen and (min-width: 1214px){
+  .hrlistbody div div:last-child{
+   padding-left:9%
+  }
+}
+@media screen and (min-width: 1317px){
+  .daoyin{
+    margin-left:.3%;
+  }
+   .ziyuanpaiming{
+    margin-left:4%;
+  }
+   .hrsocont .ziyuanpaiming{
+    margin-left:2%;
+  }
+  .contleft .bandimg, .contleft .memory {
+    width: 75%;
+  }
+  .hrlistbody div div:last-child{
+   padding-left:11%
+  }
+}
